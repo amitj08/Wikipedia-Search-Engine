@@ -35,4 +35,4 @@ Both simple and multi field queries have been implemented. The search returns a 
 - Along with these files, it also creates the offsets for all the files.
 
 ##### python3 search.py queries.txt
-- This function takes in queries.txt as argument which contains list of queries. It returns the top K(K being mentioned along with query in queries.txt) results from the Wikipedia corpus.
+* This function takes in queries.txt as argument which contains list of queries. It returns the top K(K being mentioned along with query in queries.txt) results from the Wikipedia corpus.
