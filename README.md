@@ -1,7 +1,8 @@
 # Wikipedia-Search-Engine
 
 
-This project requires making of a search engine over the ~60GB Wikipedia dump. The code consists of indexer.py and search.py. Both simple and multi field queries have been implemented. The search returns a ranked list of articles in real time.
+This project requires making of a search engine over the ~60GB Wikipedia dump. The code consists of indexer.py and search.py. 
+Both simple and multi field queries have been implemented. The search returns a ranked list of articles in real time.
 
 Indexing:
     Parsing: SAX Parser is used to parse the XML corpus.
@@ -31,7 +32,9 @@ Files Produced (during Index creation)
 How to run:
 
 python3 indexer.py pathtoXMLDumpDirectory stat.txt
-This function takes as input the corpus file and creates the entire index in a field separated manner. It also creates a vocabulary list and a file containg the title-id map. Along with these files, it also creates the offsets for all the files.
+This function takes as input the corpus file and creates the entire index in a field separated manner. 
+It also creates a vocabulary list and a file containg the title-id map. 
+Along with these files, it also creates the offsets for all the files.
 
 python3 search.py queries.txt
 This function takes in queries.txt as argument which contains list of queries. It returns the top K(K being mentioned along with query in queries.txt) results from the Wikipedia corpus.
